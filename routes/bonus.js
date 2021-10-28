@@ -18,6 +18,7 @@ router.get('/', function(req, res, next) {
   res.write(`Math.sign() applied to ${input} is ${Math.sign(input)}\n`);
   res.write(`Math.tanh() applied to ${input} is ${Math.tanh(input)}\n`);
   res.write(`Math.trunc() applied to ${input} is ${Math.trunc(input)}`);
+  res.send();
 });
 
 module.exports = router;
